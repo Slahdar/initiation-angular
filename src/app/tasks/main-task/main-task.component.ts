@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Task } from '../model/Task.model';
-import { TaskStatus } from '../enums/task-status.enum';
-import { TaskList } from '../model/Task-list.model';
+import { Task } from '../../model/Task.model';
+import { TaskStatus } from '../../enums/task-status.enum';
+import { TaskList } from '../../model/Task-list.model';
 
 @Component({
   selector: 'app-main-task',

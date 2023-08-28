@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Task } from '../model/Task.model';
+import { Task } from '../../model/Task.model';
 // import { TaskStatus } from '../enums/task-status.enum';
 // import { StatusColorDirective } from '../status-color.directive';
 
