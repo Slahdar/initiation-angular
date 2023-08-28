@@ -23,6 +23,7 @@ Compodoc : 1.1.21
 - ng generate component main-task
 - ng generate component task-list
 - ng generate directive status-color
+- ng generate pipe dateFormat
 
 ## Commande de lancement
 

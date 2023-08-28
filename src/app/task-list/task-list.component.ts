@@ -13,9 +13,24 @@ export class TaskListComponent implements OnInit {
 
   ngOnInit(): void {
     const tasks: Task[] = [
-      new Task('Tâche 1', 'Description de la tâche 1', TaskStatus.EN_COURS),
-      new Task('Tâche 2', 'Description de la tâche 2', TaskStatus.A_FAIRE),
-      new Task('Tâche 3', 'Description de la tâche 3', TaskStatus.TERMINEE),
+      new Task(
+        'Tâche 1',
+        'Description de la tâche 1',
+        TaskStatus.EN_COURS,
+        new Date(2023, 8, 28)
+      ),
+      new Task(
+        'Tâche 2',
+        'Description de la tâche 2',
+        TaskStatus.A_FAIRE,
+        new Date(2023, 8, 28)
+      ),
+      new Task(
+        'Tâche 3',
+        'Description de la tâche 3',
+        TaskStatus.TERMINEE,
+        new Date(2023, 8, 28)
+      ),
     ];
 
     this.taskList = new TaskList(tasks);

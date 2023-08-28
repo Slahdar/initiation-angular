@@ -14,7 +14,8 @@ export class MainTaskComponent implements OnInit {
     this.mainTask = new Task(
       'Tâche principale',
       'Ceci est la description de la tâche principale',
-      TaskStatus.EN_COURS
+      TaskStatus.EN_COURS,
+      new Date(2023, 8, 28)
     );
   }
 }
