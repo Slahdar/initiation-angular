@@ -2,15 +2,31 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
 # Commandes exécutées
+
+Angular CLI: 16.2.0
+Node: 18.17.1
 
 - ng serve
 - ng build
   => résultat : le projet est compilé dans le dossier dist
+- npm install --global yarn
+- yarn add --dev @compodoc/compodoc
+
+Yarn : 1.22.19
+Compodoc : 1.1.21
+
+- yarn add @babel/plugin-proposal-private-methods
+- npm run compodoc
+- npm run compodoc:serve
+
+## Commande de lancement
+
+npm run compodoc:serve
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
