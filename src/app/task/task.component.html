@@ -1,5 +1,5 @@
 <h3>Détails de la tâche</h3>
-<p><strong>Titre:</strong> {{ task.title }}</p>
+<p><strong>Titre:</strong> <span appStatusColor [status]="task.state">  {{ task.title }} </span></p>
 <p><strong>Description:</strong> {{ task.description }}</p>
-<p><strong>Statut:</strong> <span appStatusColor [status]="task.state"> {{ task.state }} </span> </p>
+<p><strong>Statut:</strong> {{ task.state }} </p>
 <p><strong>Date de création:</strong> {{ task.creationDate | dateFormat }}</p>
