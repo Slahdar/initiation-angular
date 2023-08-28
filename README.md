@@ -20,6 +20,7 @@ Compodoc : 1.1.21
 - npm run compodoc
 - npm run compodoc:serve
 - ng generate component task
+- ng generate component main-task
 
 ## Commande de lancement
 
