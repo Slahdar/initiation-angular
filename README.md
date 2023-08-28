@@ -19,10 +19,12 @@ Compodoc : 1.1.21
 - yarn add @babel/plugin-proposal-private-methods
 - npm run compodoc
 - npm run compodoc:serve
+- ng generate component task
 
 ## Commande de lancement
 
-npm run compodoc:serve
+- ng serve (compile application)
+- npm run compodoc:serve (documentation interactive)
 
 ## Development server
 
