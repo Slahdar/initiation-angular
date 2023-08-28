@@ -21,6 +21,8 @@ Compodoc : 1.1.21
 - npm run compodoc:serve
 - ng generate component task
 - ng generate component main-task
+- ng generate component task-list
+- ng generate directive status-color
 
 ## Commande de lancement
 

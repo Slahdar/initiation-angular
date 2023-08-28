@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Task } from '../model/Task.model'; // Assurez-vous que le chemin est correct
-import { TaskStatus } from '../enums/task-status.enum'; // Assurez-vous que le chemin est correct
+import { Task } from '../model/Task.model';
+import { TaskStatus } from '../enums/task-status.enum';
 
 @Component({
   selector: 'app-main-task',
