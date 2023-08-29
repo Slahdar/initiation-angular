@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Task } from '../model/Task.model';
 import { TaskStatus } from '../enums/task-status.enum';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -27,7 +28,7 @@ export class CRUDTaskListService {
     ),
   ];
 
-  getTaskList(): Task[] {
-    return this.taskList;
+  getTaskList(): Observable<Task[]> {
+    return of(this.taskList);
   }
 }

@@ -28,6 +28,19 @@ Compodoc : 1.1.21
 - ng generate service crud-task-list
 - ng generate service by-statut-task-list
 
+## Question Mise en pratique observable / http
+
+Imaginons que les données délivrées par les services soient issues de requêtes
+HTTP. Décrivez les opérations à effectuer pour mettre en place le module
+HttpClient ainsi que la requête à effectuer sur une url "https://domain/data" avec
+un paramètre de requête "?param=test"
+
+1. Dans app.module.ts importer HttpClientModule
+2. Taper commande ng generate service data
+3. Dans data.service.ts créer la méthode
+4. Dans le mirror, utiliser la méthode de data.service.ts
+5. Modifier le template pour afficher les données
+
 ## Commande de lancement
 
 - ng serve (compile application)

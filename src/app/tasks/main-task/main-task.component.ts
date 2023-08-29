@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TaskFacadeService } from '../../services/task-facade.service';
 import { TaskList } from '../../model/Task-list.model';
-import { CRUDTaskListService } from '../../services/crud-task-list.service';
+import { Observable } from 'rxjs';
+import { Task } from '../../model/Task.model';
 
 @Component({
   selector: 'app-main-task',
@@ -8,11 +10,11 @@ import { CRUDTaskListService } from '../../services/crud-task-list.service';
   styleUrls: ['./main-task.component.scss'],
 })
 export class MainTaskComponent implements OnInit {
-  @Input() taskList!: TaskList;
+  taskList$!: Observable<Task[]>;
 
-  constructor(private crudService: CRUDTaskListService) {}
+  constructor(private taskFacade: TaskFacadeService) {}
 
   ngOnInit(): void {
-    this.taskList = new TaskList(this.crudService.getTaskList());
+    this.taskList$ = this.taskFacade.getTaskList();
   }
 }

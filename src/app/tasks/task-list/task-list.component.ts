@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TaskList } from '../../model/Task-list.model';
-import { TaskFacadeService } from '../../services/task-facade.service';
 import { Task } from '../../model/Task.model';
 import { TaskStatus } from '../../enums/task-status.enum';
+import { TaskFacadeService } from '../../services/task-facade.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-task-list',
@@ -10,11 +11,9 @@ import { TaskStatus } from '../../enums/task-status.enum';
   styleUrls: ['./task-list.component.scss'],
 })
 export class TaskListComponent implements OnInit {
-  @Input() taskList: Task[] = [];
+  @Input() taskList!: Observable<Task[]>;
 
-  constructor(private taskFacadeService: TaskFacadeService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.taskList = this.taskFacadeService.getTaskList();
-  }
+  ngOnInit(): void {}
 }
