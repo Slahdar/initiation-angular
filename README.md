@@ -27,6 +27,9 @@ Compodoc : 1.1.21
 - ng generate module tasks
 - ng generate service crud-task-list
 - ng generate service by-statut-task-list
+- ng generate service task-facade
+- ng generate module add-task-form
+- ng generate component add-task-form
 
 ## Question Mise en pratique observable / http
 
@@ -38,7 +41,7 @@ un paramètre de requête "?param=test"
 1. Dans app.module.ts importer HttpClientModule
 2. Taper commande ng generate service data
 3. Dans data.service.ts créer la méthode
-4. Dans le mirror, utiliser la méthode de data.service.ts
+4. Dans le smart, utiliser la méthode de data.service.ts
 5. Modifier le template pour afficher les données
 
 ## Commande de lancement
